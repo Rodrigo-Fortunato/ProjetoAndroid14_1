@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarLivroFragment">
+
+    <TextView
+        android:id="@+id/tvResultadoListarLivro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarLivro" />
+
+    <Button
+        android:id="@+id/btnBuscarLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="34dp"
+        android:text="@string/btnBuscarAluno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeletarLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="@string/btnDeletarAluno"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnEditarLivro"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnInserirLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/btnInserirAluno"
+        app:layout_constraintStart_toStartOf="@+id/etEdicao"
+        app:layout_constraintTop_toBottomOf="@+id/etEdicao" />
+
+    <Button
+        android:id="@+id/btnListarLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/btnListarAluno"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeletarLivro"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditarLivro" />
+
+    <Button
+        android:id="@+id/btnEditarLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnEditarAluno"
+        app:layout_constraintEnd_toEndOf="@+id/btnListarLivro"
+        app:layout_constraintTop_toBottomOf="@+id/etEdicao" />
+
+    <EditText
+        android:id="@+id/etCodigoLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:importantForAutofill="no"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="73dp"
+        android:ems="10"
+        android:hint="@string/etCodigo"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:importantForAutofill="no"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="@string/etNome"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etCodigoLivro"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoLivro" />
+
+    <EditText
+        android:id="@+id/etQtdPaginasLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:importantForAutofill="no"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/etQtdPaginas"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeLivro" />
+
+    <EditText
+        android:id="@+id/etISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:importantForAutofill="no"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/etISBN"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etQtdPaginasLivro" />
+
+    <EditText
+        android:id="@+id/etEdicao"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:importantForAutofill="no"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/etEdicao"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etISBN" />
+</androidx.constraintlayout.widget.ConstraintLayout>

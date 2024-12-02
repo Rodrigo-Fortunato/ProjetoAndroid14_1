@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/AlugarExemplar"
+        android:title="Alugar Exemplar" />
+    <item
+        android:id="@+id/CadastroLivro"
+        android:title="Cadastrar Livro" />
+    <item
+        android:id="@+id/CadastroRevista"
+        android:title="Cadastrar Revista" />
+    <item
+        android:id="@+id/CadastroAluno"
+        android:title="Cadastrar Aluno" />
+</menu>

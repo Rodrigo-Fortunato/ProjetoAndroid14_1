@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ProjetoAndroid14_1</string>
+    <string name="nome">Rodrigo Fortunato Martins Neves</string>
+    <string name="ra">1110482313035</string>
+    <string name="etRA">RA</string>
+    <string name="etNomeAluno">Nome</string>
+    <string name="etEmail">Email</string>
+    <string name="etCodigo">Código</string>
+    <string name="etNome">Nome</string>
+    <string name="etQtdPaginas">Quantidade Paginas</string>
+    <string name="etISBN">ISBN</string>
+    <string name="etISSN">ISBN</string>
+    <string name="etEdicao">Edição</string>
+    <string name="etDataRetirada">Data Retirada</string>
+    <string name="etDataDevolucao">Data Devolução</string>
+
+
+    <string name="btnInserirAluno">Inserir</string>
+    <string name="btnEditarAluno">Editar</string>
+    <string name="btnDeletarAluno">Deletar</string>
+    <string name="btnBuscarAluno">Buscar</string>
+    <string name="btnListarAluno">Listar Todos</string>
+
+    <string name="tvInicio">Inicio</string>
+
+
+</resources>

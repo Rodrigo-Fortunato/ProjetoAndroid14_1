@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarAlunoFragment">
+
+    <Button
+        android:id="@+id/btnBuscarAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:text="@string/btnBuscarAluno"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etRA"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeletarAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:text="@string/btnDeletarAluno"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnEditarAluno"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditarAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/btnEditarAluno"
+        app:layout_constraintBottom_toTopOf="@+id/btnListarAluno"
+        app:layout_constraintEnd_toEndOf="@+id/btnListarAluno" />
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:importantForAutofill="no"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/etNomeAluno"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etRA"
+        app:layout_constraintTop_toBottomOf="@+id/etRA" />
+
+    <EditText
+        android:id="@+id/etRA"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:importantForAutofill="no"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:hint="@string/etRA"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarAluno"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:importantForAutofill="no"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/etEmail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etNomeAluno"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAluno" />
+
+    <Button
+        android:id="@+id/btnInserirAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="@string/btnInserirAluno"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnEditarAluno"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnListarAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="306dp"
+        android:text="@string/btnListarAluno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeletarAluno"
+        app:layout_constraintTop_toTopOf="@+id/btnBuscarAluno" />
+
+    <TextView
+        android:id="@+id/tvResultadoListarAluno"
+        android:layout_width="0dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
